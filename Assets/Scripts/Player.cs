@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     float axisX;
 
     Rigidbody2D rigid;
+
+    public GameObject bullet;
+    public Transform bulletSpawner;
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -26,7 +29,10 @@ public class Player : MonoBehaviour
             isGround = false;
         }
         
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -49,6 +55,11 @@ public class Player : MonoBehaviour
     private void Jump()
     {
         rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        
+    }
+    
+    private void Shoot()
+    {
+
+        Instantiate(bullet, new Vector2(bulletSpawner.position.x, bulletSpawner.position.y), bulletSpawner.rotation);
     }
 }
