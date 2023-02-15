@@ -7,22 +7,18 @@ public class Bullet : MonoBehaviour
 {
     public Weapon weapon;
     [SerializeField] private float speed;
-    private int damage;
+    [SerializeField] private int damage;
     void Start()
     {
-        if(weapon != null && weapon.nameWeapon == "Bolter")
+        /*if(weapon != null && weapon.nameWeapon == "Bolter")
         speed = 30f;
-        damage = 2;
+        damage = 2;*/
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.right * speed*Time.deltaTime);
-
-        
-        
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

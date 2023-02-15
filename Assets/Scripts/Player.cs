@@ -14,8 +14,15 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigid;
 
+    public Transform handGunTransform;
     public HandGun handGun;
+    
     public Animator anim;
+    public bool isFacingRight = true;
+    public bool isGunFacingRight = true;
+
+    Vector3 pos;
+    public Camera main;
     void Start()
     {
         health = maxHealth;
@@ -36,9 +43,9 @@ public class Player : MonoBehaviour
         
         if (Input.GetMouseButton(0))
         {
-            handGun.Shoot();
-            
+            handGun.Shoot();            
         }
+        pos = main.WorldToScreenPoint(transform.position);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,28 +53,78 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isGround = true;
+            anim.SetBool("isJumping", false);
         }
     }
 
     private void Move()
     {
+        //Flip2();
         if (Input.GetButton("Horizontal"))
         {
             axisX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
             gameObject.transform.Translate(Vector2.right * axisX);
-            if (axisX < 0)           
-                gameObject.GetComponent<SpriteRenderer>().flipX= true;
-            else
-                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            if (isFacingRight && axisX < 0)
+            {
+                Flip();
+                FlipHand();
+                //gameObject.GetComponent<SpriteRenderer>().flipX= true;
+            }
+            else if(!isFacingRight && axisX >0)
+            {
+                Flip();
+                FlipHand();
+            }
+                //gameObject.GetComponent<SpriteRenderer>().flipX = false;
             anim.SetBool("isRunning", true);
         }
         else
             anim.SetBool("isRunning", false);
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Jump()
     {
-        rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);        
+        rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        anim.SetBool("isJumping", true);
     }
-    
+
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
+    }
+    private void FlipHand()
+    {
+        isGunFacingRight = !isGunFacingRight;
+        Vector3 Scaler2 = handGunTransform.localScale;
+        Scaler2.x *= -1;
+        Scaler2.y *= -1;
+        handGunTransform.localScale = Scaler2;
+    }
+
+    private void Flip2()
+    {
+        if (Input.mousePosition.x < pos.x)
+        {
+
+        }
+            //transform.localRotation = Quaternion.Euler(0, 180, 0);
+        if (Input.mousePosition.x > pos.x)
+        {
+
+        }
+            //transform.localRotation = Quaternion.Euler(0, 0, 0);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+    }
 }

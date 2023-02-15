@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TextManager : MonoBehaviour
 {
     public Player player;
-    public Weapon weapon;
+    public GameObject handGun;
 
     public Text healthText;
     public Text ammoCountText;
@@ -18,8 +18,9 @@ public class TextManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int idWeapon = handGun.GetComponent<HandGun>().currentWeaponIndex;
         healthText.text = $"{player.health}/{player.maxHealth}";
-        ammoCountText.text = $"Патроны: {weapon.ammoCount}";
+        ammoCountText.text = $"Патроны: {handGun.GetComponent<HandGun>().weapons[idWeapon].ammoCount}";
 
     }
 }

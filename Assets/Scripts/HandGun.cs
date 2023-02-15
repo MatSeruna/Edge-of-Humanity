@@ -4,19 +4,33 @@ using UnityEngine;
 
 public class HandGun : MonoBehaviour
 {
-    [SerializeField] private Weapon[] weapons;
-    [SerializeField] private int currentWeaponIndex;
+    
+
+    public Weapons2[] weapons = { new Weapons2("Bolter", 10, 0.25f), new Weapons2("Bazooka", 10, 1f) };
+    [SerializeField] private Bullet[] bullets;
+    public int currentWeaponIndex = 0;
     public Transform bulletSpawner;
     private float lastShoottime = 0;
+    AudioSource audioWeapon;
+
+    public Sprite[] weaponImages;
     void Start()
-    {
-        weapons[0].nameWeapon = "Bolter";
-        weapons[0].fireRate = 0.25f;
+    {     
+        audioWeapon = GetComponent<AudioSource>();
     }
 
     void Update()
-    {
-        
+    {        
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+            currentWeaponIndex= 0;
+        if(Input.GetKeyDown(KeyCode.Alpha2))
+            currentWeaponIndex = 1;
+
+        if (currentWeaponIndex == 0)
+            gameObject.GetComponent<SpriteRenderer>().sprite = weaponImages[0];
+        else if (currentWeaponIndex == 1)
+            gameObject.GetComponent<SpriteRenderer>().sprite = weaponImages[1];
+
     }
 
     public void Shoot()
@@ -25,15 +39,29 @@ public class HandGun : MonoBehaviour
         {
             if(Time.time > lastShoottime + weapons[currentWeaponIndex].fireRate)
             {
-                Instantiate(weapons[currentWeaponIndex].bullet, new Vector2(bulletSpawner.position.x, bulletSpawner.position.y), bulletSpawner.rotation);
-                weapons[currentWeaponIndex].ammoCount--;
+                Instantiate(bullets[currentWeaponIndex], new Vector2(bulletSpawner.position.x, bulletSpawner.position.y), bulletSpawner.rotation);               
                 lastShoottime= Time.time;
-            }
-            
+                audioWeapon.Play();
+                if(currentWeaponIndex>0)
+                    weapons[currentWeaponIndex].ammoCount--;
+            }           
         }
         else
         {
             Debug.Log("Нет патронов!");
+        }
+    }
+    public struct Weapons2
+    {
+        public string name;
+        public int ammoCount;
+        public float fireRate;
+
+        public Weapons2(string name, int ammoCount, float fireRate)
+        {
+            this.name = name;
+            this.ammoCount = ammoCount;
+            this.fireRate = fireRate;
         }
     }
 }

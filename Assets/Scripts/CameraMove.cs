@@ -5,6 +5,8 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     [SerializeField] Transform playerTransform;
+    public float offsetX = 0f;
+    public float offsetY = 2f;
     void Start()
     {
         
@@ -14,6 +16,6 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = new Vector3(playerTransform.position.x + offsetX, playerTransform.position.y + offsetY, -10f);
     }
 }
