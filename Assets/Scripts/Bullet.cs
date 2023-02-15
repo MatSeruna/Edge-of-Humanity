@@ -5,17 +5,35 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float speed = 30;
-    private int damage = 1;
+    public Weapon weapon;
+    [SerializeField] private float speed;
+    private int damage;
     void Start()
     {
-        
+        if(weapon != null && weapon.nameWeapon == "Bolter")
+        speed = 30f;
+        damage = 2;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.right * speed*Time.deltaTime);
+
+        
+        
         
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        roboRaptor robo = collision.gameObject.GetComponent<roboRaptor>();
+        if (robo != null)
+        {
+            robo.TakeDamage(damage);
+            
+        }
+        Destroy(gameObject);
+    }
+
 }

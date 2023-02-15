@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int maxHealth = 100;
+    public int health;
     [SerializeField] float speed = 10f;
     [SerializeField] float jumpForce = 10f;
     [SerializeField] bool isGround;
@@ -12,11 +14,13 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigid;
 
-    public GameObject bullet;
-    public Transform bulletSpawner;
+    public HandGun handGun;
+    public Animator anim;
     void Start()
     {
+        health = maxHealth;
         rigid = GetComponent<Rigidbody2D>();
+        anim= GetComponent<Animator>();
     }
 
     
@@ -29,9 +33,10 @@ public class Player : MonoBehaviour
             isGround = false;
         }
         
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            Shoot();
+            handGun.Shoot();
+            
         }
     }
 
@@ -49,7 +54,14 @@ public class Player : MonoBehaviour
         {
             axisX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
             gameObject.transform.Translate(Vector2.right * axisX);
+            if (axisX < 0)           
+                gameObject.GetComponent<SpriteRenderer>().flipX= true;
+            else
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            anim.SetBool("isRunning", true);
         }
+        else
+            anim.SetBool("isRunning", false);
     }
 
     private void Jump()
@@ -57,9 +69,4 @@ public class Player : MonoBehaviour
         rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
     
-    private void Shoot()
-    {
-
-        Instantiate(bullet, new Vector2(bulletSpawner.position.x, bulletSpawner.position.y), bulletSpawner.rotation);
-    }
 }
