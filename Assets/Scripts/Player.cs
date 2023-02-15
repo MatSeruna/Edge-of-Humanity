@@ -30,8 +30,9 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             Jump();
-            isGround = false;
+            isGround = false;     
         }
+        
         
         if (Input.GetMouseButton(0))
         {
@@ -66,7 +67,7 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);        
     }
     
 }
