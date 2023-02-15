@@ -23,11 +23,14 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        roboRaptor robo = collision.gameObject.GetComponent<roboRaptor>();
-        if (robo != null)
+        roboRaptor robo = collision.gameObject.GetComponent<roboRaptor>();      
+        if (collision.gameObject.tag == "Enemy")
         {
-            robo.TakeDamage(damage);
-            
+            if (robo != null)           
+                robo.TakeDamage(damage);        
+
+            if(collision.gameObject.name == "Boss_Taran")
+                collision.gameObject.GetComponent<BossTaran>().TakeDamage(damage);
         }
         Destroy(gameObject);
     }

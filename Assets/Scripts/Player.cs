@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -23,29 +24,43 @@ public class Player : MonoBehaviour
 
     Vector3 pos;
     public Camera main;
+
+    public GameManager gameManager;
+
+    public Image BarImage;
+    public Text BarText;
+    public Gradient Color;
+    float value;
+
     void Start()
     {
         health = maxHealth;
         rigid = GetComponent<Rigidbody2D>();
         anim= GetComponent<Animator>();
+        BarImage.color = Color.Evaluate(3);
     }
 
-    
+
     void Update()
     {
         Move();
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             Jump();
-            isGround = false;     
+            isGround = false;
         }
-        
-        
+
+
         if (Input.GetMouseButton(0))
         {
-            handGun.Shoot();            
+            handGun.Shoot();
         }
         pos = main.WorldToScreenPoint(transform.position);
+
+        BarText.text = health + "/" + maxHealth;
+        value = ((health * 100f) / maxHealth) / 100f;
+        BarImage.fillAmount = value;
+        BarImage.color = Color.Evaluate(value);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -54,6 +69,14 @@ public class Player : MonoBehaviour
         {
             isGround = true;
             anim.SetBool("isJumping", false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Trigger_BossTaran")
+        {
+            gameManager.StartBossBattle();
         }
     }
 

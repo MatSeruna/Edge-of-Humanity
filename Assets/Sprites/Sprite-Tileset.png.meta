@@ -194,8 +194,80 @@ TextureImporter:
   - first:
       213: -6955324683120456627
     second: Sprite-Tileset_63
+  - first:
+      213: 7555679163341173003
+    second: Sprite-Tileset_64
+  - first:
+      213: 7400598657016177188
+    second: Sprite-Tileset_65
+  - first:
+      213: -1834240305071591141
+    second: Sprite-Tileset_66
+  - first:
+      213: 4955970547306900272
+    second: Sprite-Tileset_67
+  - first:
+      213: 922961527191556201
+    second: Sprite-Tileset_68
+  - first:
+      213: -178381586580381743
+    second: Sprite-Tileset_69
+  - first:
+      213: 3709990211636442404
+    second: Sprite-Tileset_70
+  - first:
+      213: -968055871716725705
+    second: Sprite-Tileset_71
+  - first:
+      213: -6295481631747704365
+    second: Sprite-Tileset_72
+  - first:
+      213: -6418395329271905346
+    second: Sprite-Tileset_73
+  - first:
+      213: 4527030015406088015
+    second: Sprite-Tileset_74
+  - first:
+      213: 3062495310095267424
+    second: Sprite-Tileset_75
+  - first:
+      213: 2980085713350461541
+    second: Sprite-Tileset_76
+  - first:
+      213: 6770655178364309835
+    second: Sprite-Tileset_77
+  - first:
+      213: 4991191995340621341
+    second: Sprite-Tileset_78
+  - first:
+      213: -4009992162110191913
+    second: Sprite-Tileset_79
+  - first:
+      213: -4677811202573120336
+    second: Sprite-Tileset_80
+  - first:
+      213: 5143998543679895178
+    second: Sprite-Tileset_81
+  - first:
+      213: 8470581073133541356
+    second: Sprite-Tileset_82
+  - first:
+      213: 2636429177700135240
+    second: Sprite-Tileset_83
+  - first:
+      213: 3684199349173402936
+    second: Sprite-Tileset_84
+  - first:
+      213: -7330634176367031892
+    second: Sprite-Tileset_85
+  - first:
+      213: 7518648749874920535
+    second: Sprite-Tileset_86
+  - first:
+      213: 492745281996324913
+    second: Sprite-Tileset_87
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -254,6 +326,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -319,8 +392,8 @@ TextureImporter:
       name: Sprite-Tileset_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
+        x: 64
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -341,7 +414,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 320
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -361,8 +434,8 @@ TextureImporter:
       name: Sprite-Tileset_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 320
+        x: 192
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -382,8 +455,8 @@ TextureImporter:
       name: Sprite-Tileset_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 256
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -403,8 +476,8 @@ TextureImporter:
       name: Sprite-Tileset_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 320
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -424,8 +497,8 @@ TextureImporter:
       name: Sprite-Tileset_6
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 384
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -445,8 +518,8 @@ TextureImporter:
       name: Sprite-Tileset_7
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 448
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -466,8 +539,8 @@ TextureImporter:
       name: Sprite-Tileset_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
+        x: 0
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -487,8 +560,8 @@ TextureImporter:
       name: Sprite-Tileset_9
       rect:
         serializedVersion: 2
-        x: 320
-        y: 192
+        x: 64
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -508,8 +581,8 @@ TextureImporter:
       name: Sprite-Tileset_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 128
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -529,8 +602,8 @@ TextureImporter:
       name: Sprite-Tileset_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 192
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -550,8 +623,8 @@ TextureImporter:
       name: Sprite-Tileset_12
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 256
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -571,8 +644,8 @@ TextureImporter:
       name: Sprite-Tileset_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 320
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -592,8 +665,8 @@ TextureImporter:
       name: Sprite-Tileset_14
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 384
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -613,8 +686,8 @@ TextureImporter:
       name: Sprite-Tileset_15
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
+        x: 448
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -635,7 +708,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -655,8 +728,8 @@ TextureImporter:
       name: Sprite-Tileset_17
       rect:
         serializedVersion: 2
-        x: 128
-        y: 576
+        x: 64
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -676,8 +749,8 @@ TextureImporter:
       name: Sprite-Tileset_18
       rect:
         serializedVersion: 2
-        x: 256
-        y: 576
+        x: 128
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -697,8 +770,8 @@ TextureImporter:
       name: Sprite-Tileset_19
       rect:
         serializedVersion: 2
-        x: 384
-        y: 576
+        x: 192
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -718,7 +791,7 @@ TextureImporter:
       name: Sprite-Tileset_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 448
         width: 64
         height: 64
@@ -739,7 +812,7 @@ TextureImporter:
       name: Sprite-Tileset_21
       rect:
         serializedVersion: 2
-        x: 64
+        x: 320
         y: 448
         width: 64
         height: 64
@@ -760,7 +833,7 @@ TextureImporter:
       name: Sprite-Tileset_22
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 384
         width: 64
         height: 64
@@ -782,7 +855,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 576
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -802,8 +875,8 @@ TextureImporter:
       name: Sprite-Tileset_24
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
+        x: 128
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -823,8 +896,8 @@ TextureImporter:
       name: Sprite-Tileset_25
       rect:
         serializedVersion: 2
-        x: 320
-        y: 576
+        x: 192
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -844,8 +917,8 @@ TextureImporter:
       name: Sprite-Tileset_26
       rect:
         serializedVersion: 2
-        x: 448
-        y: 576
+        x: 256
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -865,8 +938,8 @@ TextureImporter:
       name: Sprite-Tileset_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
+        x: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -886,8 +959,8 @@ TextureImporter:
       name: Sprite-Tileset_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 512
+        x: 0
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -907,8 +980,8 @@ TextureImporter:
       name: Sprite-Tileset_29
       rect:
         serializedVersion: 2
-        x: 128
-        y: 512
+        x: 64
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -928,8 +1001,8 @@ TextureImporter:
       name: Sprite-Tileset_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 512
+        x: 128
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -949,8 +1022,8 @@ TextureImporter:
       name: Sprite-Tileset_31
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
+        x: 192
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -970,8 +1043,8 @@ TextureImporter:
       name: Sprite-Tileset_32
       rect:
         serializedVersion: 2
-        x: 320
-        y: 512
+        x: 256
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -991,8 +1064,8 @@ TextureImporter:
       name: Sprite-Tileset_33
       rect:
         serializedVersion: 2
-        x: 384
-        y: 512
+        x: 320
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -1012,8 +1085,8 @@ TextureImporter:
       name: Sprite-Tileset_34
       rect:
         serializedVersion: 2
-        x: 448
-        y: 512
+        x: 0
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1033,8 +1106,8 @@ TextureImporter:
       name: Sprite-Tileset_35
       rect:
         serializedVersion: 2
-        x: 128
-        y: 448
+        x: 64
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1054,8 +1127,8 @@ TextureImporter:
       name: Sprite-Tileset_36
       rect:
         serializedVersion: 2
-        x: 192
-        y: 448
+        x: 128
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1075,8 +1148,8 @@ TextureImporter:
       name: Sprite-Tileset_37
       rect:
         serializedVersion: 2
-        x: 256
-        y: 448
+        x: 192
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1096,8 +1169,8 @@ TextureImporter:
       name: Sprite-Tileset_38
       rect:
         serializedVersion: 2
-        x: 320
-        y: 448
+        x: 256
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1117,8 +1190,8 @@ TextureImporter:
       name: Sprite-Tileset_39
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 320
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1138,8 +1211,8 @@ TextureImporter:
       name: Sprite-Tileset_40
       rect:
         serializedVersion: 2
-        x: 128
-        y: 384
+        x: 0
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1159,8 +1232,8 @@ TextureImporter:
       name: Sprite-Tileset_41
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
+        x: 64
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1180,8 +1253,8 @@ TextureImporter:
       name: Sprite-Tileset_42
       rect:
         serializedVersion: 2
-        x: 256
-        y: 384
+        x: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1201,8 +1274,8 @@ TextureImporter:
       name: Sprite-Tileset_43
       rect:
         serializedVersion: 2
-        x: 320
-        y: 384
+        x: 192
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1222,8 +1295,8 @@ TextureImporter:
       name: Sprite-Tileset_44
       rect:
         serializedVersion: 2
-        x: 64
-        y: 320
+        x: 256
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1243,8 +1316,8 @@ TextureImporter:
       name: Sprite-Tileset_45
       rect:
         serializedVersion: 2
-        x: 192
-        y: 320
+        x: 320
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1264,8 +1337,8 @@ TextureImporter:
       name: Sprite-Tileset_46
       rect:
         serializedVersion: 2
-        x: 320
-        y: 320
+        x: 384
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1285,8 +1358,8 @@ TextureImporter:
       name: Sprite-Tileset_47
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 448
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1306,8 +1379,8 @@ TextureImporter:
       name: Sprite-Tileset_48
       rect:
         serializedVersion: 2
-        x: 64
-        y: 256
+        x: 512
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1327,8 +1400,8 @@ TextureImporter:
       name: Sprite-Tileset_49
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
+        x: 576
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1348,8 +1421,8 @@ TextureImporter:
       name: Sprite-Tileset_50
       rect:
         serializedVersion: 2
-        x: 192
-        y: 256
+        x: 640
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1369,8 +1442,8 @@ TextureImporter:
       name: Sprite-Tileset_51
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
+        x: 704
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -1390,8 +1463,8 @@ TextureImporter:
       name: Sprite-Tileset_52
       rect:
         serializedVersion: 2
-        x: 320
-        y: 256
+        x: 0
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1412,7 +1485,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1433,7 +1506,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1454,7 +1527,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1475,7 +1548,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1496,7 +1569,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1516,8 +1589,8 @@ TextureImporter:
       name: Sprite-Tileset_58
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 384
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1537,8 +1610,8 @@ TextureImporter:
       name: Sprite-Tileset_59
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 448
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1558,8 +1631,8 @@ TextureImporter:
       name: Sprite-Tileset_60
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 512
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1579,8 +1652,8 @@ TextureImporter:
       name: Sprite-Tileset_61
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 576
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1600,8 +1673,8 @@ TextureImporter:
       name: Sprite-Tileset_62
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 640
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1621,8 +1694,8 @@ TextureImporter:
       name: Sprite-Tileset_63
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 704
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1634,6 +1707,510 @@ TextureImporter:
       bones: []
       spriteID: d4c49153d09b97f90800000000000000
       internalID: -6955324683120456627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0175c7da2a2bd860800000000000000
+      internalID: 7555679163341173003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422aeacb44534b660800000000000000
+      internalID: 7400598657016177188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11f08729287b86e0800000000000000
+      internalID: -1834240305071591141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ba68574f427c440800000000000000
+      internalID: 4955970547306900272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960da917e940fcc00800000000000000
+      internalID: 922961527191556201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfd76164e2468df0800000000000000
+      internalID: -178381586580381743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42534cce0788c7330800000000000000
+      internalID: 3709990211636442404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_71
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ce79b4056c092f0800000000000000
+      internalID: -968055871716725705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_72
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d97ea19fc4f1a8a0800000000000000
+      internalID: -6295481631747704365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_73
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3c8b244774de6a0800000000000000
+      internalID: -6418395329271905346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_74
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f9fc350dd33de30800000000000000
+      internalID: 4527030015406088015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_75
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066378c324b208a20800000000000000
+      internalID: 3062495310095267424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5688878ca246b5920800000000000000
+      internalID: 2980085713350461541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_77
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b415013230336fd50800000000000000
+      internalID: 6770655178364309835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d160d00eca6444540800000000000000
+      internalID: 4991191995340621341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_79
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d64259df55a958c0800000000000000
+      internalID: -4009992162110191913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc4940de73151fb0800000000000000
+      internalID: -4677811202573120336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_81
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86ba21eb67236740800000000000000
+      internalID: 5143998543679895178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_82
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce795416b9c8d8570800000000000000
+      internalID: 8470581073133541356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_83
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841ba446e5a769420800000000000000
+      internalID: 2636429177700135240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_84
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83db431d9c7e02330800000000000000
+      internalID: 3684199349173402936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_85
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca90e435e0b544a90800000000000000
+      internalID: -7330634176367031892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_86
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cba37d33b975860800000000000000
+      internalID: 7518648749874920535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Tileset_87
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130042a293596d600800000000000000
+      internalID: 492745281996324913
       vertices: []
       indices: 
       edges: []

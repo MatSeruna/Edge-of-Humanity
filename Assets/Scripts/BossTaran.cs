@@ -14,13 +14,15 @@ public class BossTaran : Unit
 
     Rigidbody2D rb;
     CircleCollider2D collider2D;
+    public GameManager gameManager;
     void Start()
     {
         player = GameObject.Find("Player");
+        gameManager.GetComponent<GameManager>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         collider2D= GetComponent<CircleCollider2D>();
-        maxHealth = 100;
+        maxHealth = 200;
         health = maxHealth;
         damage = 10;
         speed = 2f;
@@ -38,12 +40,15 @@ public class BossTaran : Unit
         if (health <= 0)
         {
             Destroy(gameObject);
+            
+            gameManager.healthBarBoss.SetActive(false);
         }
 
         if (transform.position.x < player.transform.position.x && isPreparing)
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         else if(transform.position.x > player.transform.position.x && isPreparing)
             transform.localRotation = Quaternion.Euler(0, 0, 0);
+
 
     }
 
@@ -83,7 +88,7 @@ public class BossTaran : Unit
 
     public override void TakeDamage(int damage)
     {
-        if(isStunned)
+        if(isStunned && !isRolling && !isPreparing)
         {
             health -= damage;
         }     
@@ -97,4 +102,22 @@ public class BossTaran : Unit
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            player.GetComponent<Player>().TakeDamage(damage);
+        }
+
+        if (collision.gameObject.tag == "Wall")
+        {
+            anim.SetBool("isAttacking", false);
+            anim.SetBool("isStunned", true);
+            collider2D.isTrigger = false;
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            isStunned = true;
+            isRolling = false;
+            Debug.Log("i hit the wall");
+        }
+    }   
 }
