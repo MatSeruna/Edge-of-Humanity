@@ -20,7 +20,10 @@ public class TextManager : MonoBehaviour
     {
         int idWeapon = handGun.GetComponent<HandGun>().currentWeaponIndex;
         healthText.text = $"{player.health}/{player.maxHealth}";
-        ammoCountText.text = $"Патроны: {handGun.GetComponent<HandGun>().weapons[idWeapon].ammoCount}";
+        if (idWeapon == 0)
+            ammoCountText.text = $"Патроны: бесконечные";
+        else
+            ammoCountText.text = $"Патроны: {handGun.GetComponent<HandGun>().weapons[idWeapon].ammoCount}";
 
     }
 }
