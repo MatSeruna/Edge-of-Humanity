@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,6 +9,10 @@ public class GameManager : MonoBehaviour
     public GameObject trigger;
     public GameObject healthBarBoss;
     public EnemySpawner enemySpawner;
+    public GameObject winPanel;
+    public GameObject losePanel;
+    public GameObject player;
+
     public Camera mainCamera;
 
     AudioSource audioSource;
@@ -23,6 +26,27 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(boss!= null)
+        {
+            if (boss.GetComponent<BossTaran>().health <= 0)
+            {
+                               
+                player.GetComponent<Animator>().enabled = false;
+                enemySpawner.StopAllCoroutines();
+                winPanel.SetActive(true);
+            }
+        }
+        
+        if(player != null)
+        {
+            if (player.GetComponent<Player>().health <= 0)
+            {
+                
+                player.GetComponent<Animator>().enabled = false;
+                enemySpawner.StopAllCoroutines();
+                losePanel.SetActive(true);
+            }
+        }
         
     }
 

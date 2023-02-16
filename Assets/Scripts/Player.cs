@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
@@ -22,7 +23,6 @@ public class Player : MonoBehaviour
     public bool isFacingRight = true;
     public bool isGunFacingRight = true;
 
-    Vector3 pos;
     public Camera main;
 
     public GameManager gameManager;
@@ -32,17 +32,25 @@ public class Player : MonoBehaviour
     public Gradient Color;
     float value;
 
+    public Sprite[] UpgradeImages;
+    public int currentUpgrade;
     void Start()
     {
         health = maxHealth;
         rigid = GetComponent<Rigidbody2D>();
         anim= GetComponent<Animator>();
-        BarImage.color = Color.Evaluate(3);
+        if (BarImage != null)
+        {
+            BarImage.color = Color.Evaluate(3);
+        }
+        
     }
 
 
     void Update()
     {
+        if(currentUpgrade > 0)
+            gameObject.GetComponent<SpriteRenderer>().sprite = UpgradeImages[currentUpgrade];
         Move();
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
@@ -54,14 +62,29 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             handGun.Shoot();
-        }
-        pos = main.WorldToScreenPoint(transform.position);
+        }      
 
-        BarText.text = health + "/" + maxHealth;
-        value = ((health * 100f) / maxHealth) / 100f;
-        BarImage.fillAmount = value;
-        BarImage.color = Color.Evaluate(value);
+        if(BarText!= null)
+        {
+            BarText.text = health + "/" + maxHealth;
+            value = ((health * 100f) / maxHealth) / 100f;
+            BarImage.fillAmount = value;
+            BarImage.color = Color.Evaluate(value);
+        }
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            isGround = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+        
     }
+
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -82,7 +105,6 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        //Flip2();
         if (Input.GetButton("Horizontal"))
         {
             axisX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
@@ -91,14 +113,12 @@ public class Player : MonoBehaviour
             {
                 Flip();
                 FlipHand();
-                //gameObject.GetComponent<SpriteRenderer>().flipX= true;
             }
             else if(!isFacingRight && axisX >0)
             {
                 Flip();
                 FlipHand();
-            }
-                //gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }          
             anim.SetBool("isRunning", true);
         }
         else
@@ -132,18 +152,9 @@ public class Player : MonoBehaviour
         handGunTransform.localScale = Scaler2;
     }
 
-    private void Flip2()
+    public void AddLevelUpgrade()
     {
-        if (Input.mousePosition.x < pos.x)
-        {
-
-        }
-            //transform.localRotation = Quaternion.Euler(0, 180, 0);
-        if (Input.mousePosition.x > pos.x)
-        {
-
-        }
-            //transform.localRotation = Quaternion.Euler(0, 0, 0);
+        currentUpgrade++;
     }
 
     public void TakeDamage(int damage)

@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 7732960855775339608}
   - component: {fileID: 7732960855775339591}
   - component: {fileID: 7732960855775339610}
-  - component: {fileID: 7732960855775339611}
   - component: {fileID: 7732960855775339612}
   m_Layer: 0
   m_Name: HandGun
@@ -59,8 +58,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7732960855775339590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 0.291, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: -0.2, y: 0.451, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7732960854723788883}
   m_Father: {fileID: 7732960856041860933}
@@ -106,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 973671227
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3ef221efbad5fd54e994387f84f9688e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33fd1319deb8bbf46801be84dd09091d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -143,25 +142,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668eefac806f95442bb3155a9fd855bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullets: []
+  bullets:
+  - {fileID: 2398095127325487581, guid: 9068fa8495b52f744859424772584fbd, type: 3}
+  - {fileID: 4568399405793912036, guid: 9ec52a99f34251e4493b6b1c2ee528ef, type: 3}
   currentWeaponIndex: 0
   bulletSpawner: {fileID: 7732960854723788883}
-  weaponImages: []
---- !u!114 &7732960855775339611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732960855775339590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3dea1f9c36bbd64ca71e24c7ea3c065, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameWeapon: Bolter
-  ammoCount: 50
-  fireRate: 0.25
+  weaponImages:
+  - {fileID: 21300000, guid: 33fd1319deb8bbf46801be84dd09091d, type: 3}
+  - {fileID: 21300000, guid: a34053ce7cc2241429a3b3df9854b17d, type: 3}
 --- !u!82 &7732960855775339612
 AudioSource:
   m_ObjectHideFlags: 0
@@ -334,12 +322,12 @@ SpriteRenderer:
   m_SortingLayerID: 973671227
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b026908e7e3af8b40b1c7462a61c00a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb59bcc4324c1ed4ebabf194856cf559, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.92, y: 1.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -379,8 +367,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0074364543}
-  m_Size: {x: 1, y: 1.6251272}
+  m_Offset: {x: 0, y: -0.0026311874}
+  m_Size: {x: 1, y: 1.8868852}
   m_Direction: 0
 --- !u!114 &7732960856041860930
 MonoBehaviour:
@@ -395,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  health: 0
+  health: 100
   speed: 6
   jumpForce: 50
   isGround: 0
@@ -406,6 +394,37 @@ MonoBehaviour:
   isGunFacingRight: 1
   main: {fileID: 0}
   gameManager: {fileID: 0}
+  BarImage: {fileID: 0}
+  BarText: {fileID: 0}
+  Color:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 0, a: 1}
+    key2: {r: 0, g: 1, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 31611
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
 --- !u!95 &7732960856041860935
 Animator:
   serializedVersion: 5

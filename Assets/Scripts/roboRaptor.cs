@@ -6,6 +6,7 @@ public class roboRaptor : Unit
 {
     Animator anim;
     public GameObject player;
+    public bool isTraining;
     
     void Start()
     {
@@ -20,11 +21,10 @@ public class roboRaptor : Unit
     // Update is called once per frame
     void Update()
     {
-        if (!isAttacking)
+        if (!isAttacking && !isTraining)
         {
             Move();           
         }
-            
 
         if (health <= 0)
         {

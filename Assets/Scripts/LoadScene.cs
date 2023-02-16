@@ -9,4 +9,14 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene(id);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GoToScene(2);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
